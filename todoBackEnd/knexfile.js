@@ -7,7 +7,7 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'reduxToDo',
+      database: 'reduxtodo',
       user:     'postgres',
       password: 'password'
     },
