@@ -6,3 +6,5 @@ class ToDo {
     static updateToDoFromDB = (id) => db('reduxtodo').update({completed: true}).where({id}).returning('*');
     static deleteToDoFromDB = (id) => db.select().from('reduxtodo').where({id}).del();
 }
+
+module.exports = ToDo;

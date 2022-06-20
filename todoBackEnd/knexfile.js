@@ -9,7 +9,7 @@ module.exports = {
     connection: {
       database: 'reduxtodo',
       user:     'postgres',
-      password: '1'
+      password: 'password'
     },
     pool: {
       min: 2,
