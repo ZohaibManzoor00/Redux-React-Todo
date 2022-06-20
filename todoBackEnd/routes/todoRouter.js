@@ -8,3 +8,5 @@ router.post('/todos', toDoController.postToDo);
 router.put('/todo/:id', toDoController.updateToDo);
 
 router.delete('/todo/:id', toDoController.deleteToDo);
+
+module.exports = router;

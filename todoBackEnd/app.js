@@ -1,6 +1,7 @@
 //import
 const express = require('express');
 const cors = require('cors');
+const router = require('./routes/todoRouter');
 
 //start up server
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 //middleware
 app.use(express.json());
 app.use(cors());
+app.use(router);
 
 //configure port
 const PORT = process.env.PORT || 8000;
