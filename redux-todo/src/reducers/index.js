@@ -1,8 +1,8 @@
-import { counterReducer } from "./todo";
+import { todoReducer } from "./todo";
 import { combineReducers } from "redux";
 
 const allReducer = combineReducers({
-    counter: counterReducer
+    todoList: todoReducer
 })
 
 export default allReducer

@@ -1,6 +1,13 @@
-export const increment = num => {
+export const addTodo = description => {
     return {
-        type: 'INCREMENT',
-        payload: num || 1
+        type: 'ADDTODO',
+        payload: description
+    }
+}
+
+export const getToDos = (list) => {
+    return {
+        type: 'GETTODOS',
+        payload: list
     }
 }
